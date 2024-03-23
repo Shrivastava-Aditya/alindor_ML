@@ -1,7 +1,10 @@
 from openai import OpenAI
-
+from dotenv import load_dotenv
+import os
+load_dotenv()
+api_key_1 = os.getenv("OPENAI_API_KEY")
 # Initialize OpenAI client
-client = OpenAI(api_key='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')
+client = OpenAI(api_key=api_key_1)
 
 # Cached results to avoid redundant API calls
 sentiment_cache = {}
