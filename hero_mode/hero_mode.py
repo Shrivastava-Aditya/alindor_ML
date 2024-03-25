@@ -2,16 +2,21 @@ import asyncio
 import json
 from deepgram import Deepgram
 from openai import OpenAI
+from dotenv import load_dotenv
+import os
+
+
 
 # Your Deepgram API Key
 DEEPGRAM_API_KEY = 'd380fd244cf86e26408a124e9535e4b116cc7deb'
-OPENAI_API_KEY='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'
 
 
 
 def GPT_func(input_file_path='transcript_input.txt',output_file_path='sentiment_analysis_output.txt'):
     #gpt-3.5-turbo-instruct
-    client = OpenAI(api_key=OPENAI_API_KEY)
+    load_dotenv()
+    api_key_1 = os.getenv("OPENAI_API_KEY")
+    client = OpenAI(api_key=api_key_1)
 
     with open(input_file_path, 'r') as file:
         # Read the entire contents of the file
@@ -39,7 +44,9 @@ def GPT_func(input_file_path='transcript_input.txt',output_file_path='sentiment_
 
 async def main():
     # Initialize the Deepgram SDK
-    deepgram = Deepgram(DEEPGRAM_API_KEY)
+    load_dotenv()
+    api_key_2 = os.getenv("DEEPGRAM_API_KEY")
+    deepgram = Deepgram(api_key_2)
 
     URL = 'https://www.uclass.psychol.ucl.ac.uk/Release2/Conversation/AudioOnly/wav/F_0101_15y2m_1.wav'
 
