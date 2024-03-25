@@ -1,3 +1,11 @@
 [Speaker_1]: Hello, Dave. How are you?
 [Speaker_2]: Hi, Joseph. I’m good. Yesterday went for a run. What about you?
 [Speaker_1]: I’m fine. Today I will read a book. I like reading.
+[Speaker_1]: That sounds nice. What book are you planning to read today?
+[Speaker_2]: I'm diving into some dystopian fiction this time. It's called "Brave New World." Have you read it?
+[Speaker_1]: Oh, "Brave New World" is a classic! I read it a while back. Are you ready for the mind-bending journey it takes you on?
+[Speaker_2]: Absolutely! I've heard so much about it. I'm eager to explore its themes and unravel its mysteries.
+[Speaker_1]: It's a fascinating exploration of societal control and individual freedom. Let me know what you think once you're done.
+[Speaker_2]: Will do! Say, have you ever considered writing your own book?
+[Speaker_1]: Funny you should ask. I've been toying with a few ideas lately. Maybe one day I'll put pen to paper.
+[Speaker_2]: That's exciting! Writing can be such a rewarding experience. You never know where your imagination might take you.
