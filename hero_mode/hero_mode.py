@@ -8,7 +8,6 @@ import os
 
 
 # Your Deepgram API Key
-DEEPGRAM_API_KEY = 'd380fd244cf86e26408a124e9535e4b116cc7deb'
 
 
 
