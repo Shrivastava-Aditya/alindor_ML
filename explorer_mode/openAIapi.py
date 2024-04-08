@@ -8,8 +8,8 @@ load_dotenv()
 api_key_1 = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key_1)
 
-input_file_path = 'conversation_input.txt'
-output_file_path = 'sentiment_insights_output.txt'
+input_file_path = 'explorer_mode/convo.txt'
+output_file_path = 'explorer_mode/sentiment_insights_output.txt'
 
 with open(input_file_path, 'r') as file:
     # Read the entire contents of the file
@@ -33,5 +33,5 @@ response = client.completions.create(
 output_text = response.choices[0].text.strip()
 
 # Write output to file
-with open('sentiment_analysis_output.txt', 'w') as file:
+with open('explorer_mode/sentiment_analysis_output.txt', 'w') as file:
     file.write(output_text)

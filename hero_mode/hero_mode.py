@@ -7,7 +7,7 @@ import os
 
 
 
-def GPT_func(input_file_path='transcript_input.txt',output_file_path='sentiment_analysis_output.txt'):
+def GPT_func(input_file_path='hero_mode/transcript_input.txt',output_file_path='hero_mode/sentiment_analysis_output.txt'):
     #gpt-3.5-turbo-instruct
     load_dotenv()
     api_key_1 = os.getenv("OPENAI_API_KEY")
@@ -73,7 +73,7 @@ async def main():
         print(json_response)
 
         # Save transcript to a file for analysis
-        with open('transcript_input.txt', 'w') as file:
+        with open('hero_mode/transcript_input.txt', 'w') as file:
             file.write(transcript)
     else:
         print("Transcription failed.")
