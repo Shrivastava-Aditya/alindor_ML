@@ -7,10 +7,6 @@ import os
 
 
 
-# Your Deepgram API Key
-
-
-
 def GPT_func(input_file_path='transcript_input.txt',output_file_path='sentiment_analysis_output.txt'):
     #gpt-3.5-turbo-instruct
     load_dotenv()
