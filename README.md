@@ -58,4 +58,6 @@ python hero_mode.py
 
 By following these instructions, you can effectively utilize the sentiment and psychological analysis solutions provided in this repository.
 
+Side Note : If the API keys are expired , feel free to generate your own or contact the author of repo. 
+
 Planning to further extending this idea as web interface using flask or FastAPI. Contributions are welcome 🤍
