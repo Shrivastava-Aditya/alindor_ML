@@ -23,7 +23,10 @@ pip install openai
 pip install deepgram
 pip install python-dotenv
 ```
-
+### Alternatively
+```bash
+pip install -r requirements.txt
+```
 ## Running the Files
 
 ### 1. `openAIapi.py` (For Explorer Mode)
@@ -34,6 +37,8 @@ This script utilizes OpenAI's GPT API to perform sentiment and psychological ana
 ```bash
 python openAIapi.py
 ```
+- Input file - convo.txt 
+- Output file - sentiment_analysis_output.txt
 
 ### 2. `hero_mode.py` (For Hero Mode)
 
@@ -43,6 +48,8 @@ This script integrates both OpenAI's GPT API and Deepgram for sentiment and psyc
 ```bash
 python hero_mode.py
 ```
+- Transcript of Audio file - transcript.txt
+- Output file - sentiment_analysis_output.txt
 
 ## Additional Notes
 
